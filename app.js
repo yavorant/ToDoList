@@ -1,23 +1,21 @@
 // alert('it works!');
 
-let todos = [];
+let userInput = prompt("What would you like to do?");
 while(true) {
-  let rawUserInput = prompt("What would you like to do?");
-  let userInput = rawUserInput.toLowerCase();
+  userInput = prompt("What would you like to do?");
   
-  console.log(userInput);
-  if (userInput === 'new') {
-    let newTodo = prompt("Add a new todo");
-    console.log('Create a todo!');
-    todos = todos.push(newTodo);
-  } else if (userInput === 'list') {
-    console.log('List todos!');
-  } else if (userInput === 'delete') {
-    console.log('Delete a todo!');
-  } else if (userInput === 'quit') {
+  // if (userInput === 'new') {
+  //   let newTodo = prompt("Add a new todo");
+  //   console.log('Create a todo!');
+  //   todos = todos.push(newTodo);
+  // } else if (userInput === 'list') {
+  //   console.log('List todos!');
+  // } else if (userInput === 'delete') {
+  //   console.log('Delete a todo!');
+  // } else 
+  if (userInput === 'quit') {
     break;
   }  
 }
   
 console.log('The End');
-console.log(todos);
